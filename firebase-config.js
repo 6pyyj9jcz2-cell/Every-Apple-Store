@@ -15,10 +15,10 @@
 // (see README.md for the rule to paste in).
 
 export const firebaseConfig = {
-  apiKey: "REPLACE_ME",
-  authDomain: "REPLACE_ME",
-  projectId: "REPLACE_ME",
-  storageBucket: "REPLACE_ME",
-  messagingSenderId: "REPLACE_ME",
-  appId: "REPLACE_ME"
+  apiKey: "AIzaSyAyVdaWqluebDlEYvQIkC6YmJIIzRDIh5k",
+  authDomain: "every-apple-store.firebaseapp.com",
+  projectId: "every-apple-store",
+  storageBucket: "every-apple-store.firebasestorage.app",
+  messagingSenderId: "255758177816",
+  appId: "1:255758177816:web:d0067182f56b35eccf556d"
 };
