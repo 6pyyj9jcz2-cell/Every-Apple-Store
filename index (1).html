@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All 11 — Apple Stores NYC, No Car</title>
+<meta name="description" content="A walking, subway, and ferry route to every Apple Store in New York City.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">☾</button>
+  <div class="masthead-inner">
+    <p class="eyebrow">Manhattan · Brooklyn · Queens · The Bronx · Staten Island</p>
+    <h1>ALL&nbsp;11</h1>
+    <p class="subhead">Every Apple Store in New York City, one continuous trip — no car, ever.</p>
+  </div>
+</header>
+
+<div class="board" id="board">
+  <div class="board-row">
+    <span class="board-label">Walking</span>
+    <span class="board-value">≈ 1 hr 40</span>
+  </div>
+  <div class="board-row">
+    <span class="board-label">Subway</span>
+    <span class="board-value">≈ 3½–4½ hrs</span>
+  </div>
+  <div class="board-row">
+    <span class="board-label">Ferry</span>
+    <span class="board-value">≈ 1 hr 30</span>
+  </div>
+  <div class="board-row board-row-total">
+    <span class="board-label">Total time</span>
+    <span class="board-value" id="total-time">≈ 8–10 hrs</span>
+  </div>
+  <div class="board-row">
+    <span class="board-label">Transit left</span>
+    <span class="board-value" id="time-remaining">≈ 3½–4½ hrs</span>
+  </div>
+  <div class="board-row board-row-progress">
+    <span class="board-label">Your progress</span>
+    <span class="board-value" id="progress-value">0 / 11 visited</span>
+  </div>
+  <div class="progress-track">
+    <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+  </div>
+  <a class="full-route-btn" id="full-route-link" href="#" target="_blank" rel="noopener">Open full route in Google Maps ↗</a>
+</div>
+
+<main class="line-wrap">
+  <ol class="stops" id="stops"></ol>
+</main>
+
+<footer class="colophon">
+  <div class="colophon-inner">
+    <p><strong>Best start time:</strong> 10:00 AM &nbsp;→&nbsp; finish around 7–8 PM.</p>
+    <p class="tips">Get an OMNY card or MetroCard before you start. The Staten Island Ferry is free and runs 24/7. Build in breaks — the clock above doesn't count time inside the stores.</p>
+    <p class="reset-line"><button id="reset-btn" class="reset-btn">Reset all progress</button></p>
+  </div>
+</footer>
+
+<button id="next-stop-btn" class="next-stop-fab"></button>
+
+<script src="script.js"></script>
+</body>
+</html>
